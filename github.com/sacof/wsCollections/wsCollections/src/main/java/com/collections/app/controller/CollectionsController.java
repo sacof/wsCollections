@@ -21,12 +21,10 @@ import net.minidev.json.JSONObject;
 public class CollectionsController {
 
 	public CollectionsController() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	@GetMapping("/list")
 	public @ResponseBody JSONArray list( Model model){
-		//Object obj = callWebService("api.unsplash.com/collections", model);
 		
 		JSONArray collectionList = CallRestService.callRestService();
 		if(collectionList != null)

@@ -44,9 +44,6 @@ public class CallRestService {
 		}
 		return listado;
 		
-//		restTemplate.postForObject("https://api.unsplash.com/collections/page=1", entity, String.class); 
-		//Collection collection = restTemplate.getForObject("https://api.unsplash.com/collections/page=1", Collection.class);
-		//System.out.println(collection.getId());
 	}
 
 }
